@@ -1,0 +1,62 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin mobile {
+    @media (max-width:938px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width:1366px){
+        @content;
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+
+    @include mobile{
+        height: 150vh;
+    }
+
+    
+    .container{
+        display: flex;
+        overflow: hidden;
+
+        @include mobile{
+            flex-direction: column;
+        }
+        .query{
+            flex: 1;
+        }
+        .input{
+            flex: 2;
+        }
+
+    }
+    
+}
+

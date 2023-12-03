@@ -1,0 +1,32 @@
+
+.navbar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkslategray;
+    margin: 0;
+    padding: 10px;
+    h1{
+        padding-left:50px ;
+    }
+    
+    .table{
+        background-color: rgb(55, 112, 112);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(28, 39, 39);
+        }
+
+        img{
+            width: 50px;
+            height: 40px;
+        }
+        a{
+            padding-right: 30px;
+        }
+    }
+}
